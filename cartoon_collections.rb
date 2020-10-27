@@ -13,4 +13,10 @@ end
 def find_the_cheese (array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  #for each element in array, compare it to cheese_types, return first match
+  array.find {|ingredient|
+    ingredient == cheese_types[0] ||
+    ingredient == cheese_types[1] ||
+    ingredient == cheese_types[2]
+  }
 end
